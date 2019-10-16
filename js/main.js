@@ -41,8 +41,9 @@ function renderCards() {
 
 }
 function renderModals() {
+  var strHTML=``
     for (var i = 0; i < objects.length; i++) {
-        var strHTML = `<div class="portfolio-modal modal fade" id="${objects[i].id}" tabindex="-1" role="dialog" aria-hidden="true">
+         strHTML += `<div class="portfolio-modal modal fade" id="${objects[i].id}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
